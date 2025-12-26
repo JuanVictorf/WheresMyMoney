@@ -38,6 +38,12 @@ public class Transaction {
     @Column(name = "datetransaction")
     private LocalDateTime dateTransaction;
 
+    @Column(name = "type")
+    private String type;
+
+    @Column(name = "category")
+    private String category;
+
     @Column(name = "createdate", updatable = false)
     private LocalDateTime createDate;
 

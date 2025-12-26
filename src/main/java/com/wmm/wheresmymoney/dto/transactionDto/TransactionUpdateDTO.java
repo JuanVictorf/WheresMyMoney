@@ -1,16 +1,22 @@
 package com.wmm.wheresmymoney.dto.transactionDto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
-public class TransactionCreateDTO {
-    private int userId;
+@NoArgsConstructor
+@AllArgsConstructor
+public class TransactionUpdateDTO {
+    private int id;
     private BigDecimal amount;
     private String type;
     private String category;
     private String description;
     private LocalDateTime dateTransaction;
+
+
 }

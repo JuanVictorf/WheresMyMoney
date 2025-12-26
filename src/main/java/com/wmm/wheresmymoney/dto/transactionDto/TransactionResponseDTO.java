@@ -14,6 +14,8 @@ public class TransactionResponseDTO {
     private int id;
     private BigDecimal amount;
     private String description;
+    private String type;
+    private String category;
     private LocalDateTime dateTransaction;
     private LocalDateTime createDate;
 }
